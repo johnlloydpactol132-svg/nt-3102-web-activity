@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity 1 - Dark Forest Login</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif}
+.page{min-height:100vh;display:grid;place-items:center;padding:25px;color:#fff;
+background:linear-gradient(rgba(3,15,20,.42),rgba(3,15,20,.62)),
+url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85") center/cover}
+.login{width:400px;text-align:center;padding:42px 34px;background:rgba(5,20,25,.40);
+border:1px solid rgba(255,255,255,.22);border-radius:6px;backdrop-filter:blur(5px)}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:1px}.line{width:45px;height:2px;background:#fff;margin:16px auto 26px}
+input{width:100%;padding:14px 4px;margin:10px 0;background:transparent;border:0;
+border-bottom:1px solid rgba(255,255,255,.65);color:#fff;outline:none}
+input::placeholder{color:rgba(255,255,255,.75)}
+button{width:100%;margin-top:18px;padding:13px;border:1px solid #fff;background:rgba(255,255,255,.15);
+color:#fff;border-radius:3px;cursor:pointer}.small{font-size:12px;margin-top:22px}.small a{color:#fff}
+@media(max-width:600px){.page{align-items:start;padding-top:90px}.login{width:100%;max-width:350px;padding:35px 25px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<section class="page">
+ <main class="login">
+  <h1>Welcome Back</h1><div class="line"></div>
+  <form>
+   <input type="text" placeholder="Username" required>
+   <input type="password" placeholder="Password" required>
+   <button type="submit">SIGN IN</button>
+  </form>
+  <p class="small">Don't have an account? <a href="#">Create one</a></p>
+ </main>
+</section>
+</body>
+</html>
